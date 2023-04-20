@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fvz^#6$_$&yvx0z=+*4*c64)1)sv-!%t0@s5l-l@u9!87wp#l$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
@@ -135,6 +135,7 @@ REST_FRAMEWORK = {
     
 }
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-washim-framescartbacken-ptceh0ahb63.ws-us94.gitpod.io']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://framescart.in"
